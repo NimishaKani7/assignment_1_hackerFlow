@@ -408,8 +408,25 @@ hr {
   .hexagons {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
   .hexagon {
     width: 10em;
+  }
+}
+@media screen and (max-width: 822px) {
+  .hexagon {
+    width: 10em;
+    
+  }
+  .hexagon:nth-of-type(2), .hexagon:nth-of-type(4) {
+    margin: 0 3em;
+  }
+}
+
+@media screen and (max-width: 613px) {
+  .hexagon {
+    width: 10em;
+    margin: 2em;
   }
 }
